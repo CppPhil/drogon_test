@@ -5,7 +5,7 @@ using namespace drogon;
 
 namespace api {
 namespace v1 {
-class User : public drogon::HttpController<User> {
+class User : public drogon::HttpController<User, false> {
 public:
   METHOD_LIST_BEGIN
     // use METHOD_ADD to add your custom processing function here;
