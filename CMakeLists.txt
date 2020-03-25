@@ -1,4 +1,4 @@
-cmake_minimun_required(VERSION 3.15 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
 
 project(drogon_test_project VERSION 1.0.0)
 
