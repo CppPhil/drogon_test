@@ -12,7 +12,28 @@ set(CMAKE_CXX_EXTENSIONS        OFF)
 
 find_package(Threads REQUIRED)
 
+add_subdirectory(external/drogon)
 
+set(APP_NAME drogon_test_app)
 
+set(
+    APP_HEADERS
+   )
 
+set(
+    APP_SOURCES
+   )
+
+add_executable(
+    ${APP_NAME}
+    ${APP_HEADERS}
+    ${APP_SOURCES}
+)
+
+target_link_libraries(
+    ${APP_NAME}
+    PRIVATE
+    Threads::Threads
+    drogon
+)
 
