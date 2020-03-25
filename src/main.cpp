@@ -1,8 +1,13 @@
-#include <cstdio>
+#include <drogon/drogon.h>
 
-int main(int argc, char* argv[]) {
-  (void) argc;
-  (void) argv;
+using namespace drogon;
 
-  puts("Hello World!");
+int main()
+{
+    app().setLogPath("./")
+         .setLogLevel(trantor::Logger::kWarn)
+         .addListener("0.0.0.0", 80)
+         .setThreadNum(2)
+         .enableRunAsDaemon()
+         .run();
 }
