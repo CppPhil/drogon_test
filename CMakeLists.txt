@@ -37,3 +37,9 @@ target_link_libraries(
     drogon
 )
 
+target_include_directories(
+    ${APP_NAME}
+    PRIVATE
+    ${drogon_test_project_SOURCE_DIR}/include
+)
+
