@@ -2,12 +2,12 @@
 
 using namespace drogon;
 
-int main()
-{
-    app().setLogPath("./")
-         .setLogLevel(trantor::Logger::kWarn)
-         .addListener("0.0.0.0", 80)
-         .setThreadNum(2)
-         .enableRunAsDaemon()
-         .run();
+int main() {
+  app()
+    .setLogPath("./")
+    .setLogLevel(trantor::Logger::kWarn)
+    .addListener("0.0.0.0", 80)
+    .setThreadNum(2)
+    .enableRunAsDaemon()
+    .run();
 }
