@@ -14,6 +14,7 @@ public:
                Get); // path is /api/v1/User/{arg1}/detailinfo
     METHOD_ADD(User::newUser, "/{name}", Post); // path is /api/v1/User/{arg1}
   METHOD_LIST_END
+
   // your declaration of processing function maybe like this:
   void getInfo(const HttpRequestPtr& req,
                std::function<void(const HttpResponsePtr&)>&& callback,
